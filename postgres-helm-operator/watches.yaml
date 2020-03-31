@@ -2,4 +2,4 @@
 - version: v1alpha1
   group: postgres.example.com
   kind: Postgres
-  chart: helm-charts/basic
+  chart: helm-charts/postgres-chart

@@ -16,8 +16,8 @@ spec:
       containers:
         - name: postgres-helm-operator
           # Replace this with the built image name
-          image: "quay.io/deekshah86/postgres-helm-operator"
-          imagePullPolicy: "Always"
+          image: quay.io/deekshah86/postgres-helm-operator
+          imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
               valueFrom:

@@ -1,0 +1,33 @@
+affinity: {}
+container:
+  name: primary
+  port: 5432
+fullnameOverride: ""
+image: registry.access.redhat.com/rhscl/postgresql-10-rhel7
+imagePullSecrets: []
+ingress:
+  annotations: {}
+  enabled: false
+  hosts:
+  - host: chart-example.local
+    paths: []
+  tls: []
+name: primary
+nameOverride: ""
+nodeSelector: {}
+podSecurityContext: {}
+pv:
+  storage: 2Gi
+pvc:
+  name: primary-pvc
+replicaCount: 1
+resources: {}
+securityContext: {}
+service:
+  port: 80
+  type: ClusterIP
+serviceAccount:
+  annotations: {}
+  create: true
+  name: null
+tolerations: []
