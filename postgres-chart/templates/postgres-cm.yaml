@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgresql-cm
+  labels:
+    name: "{{.Values.container.name}}"
+data:
+  POSTGRES_DB: {{.Values.data.pgdb}}
+  POSTGRES_USER: {{.Values.data.pguser}}
+  POSTGRES_PASSWORD: {{.Values.data.pgpassword}}
+  PGDATA: {{.Values.data.pgdata}}
