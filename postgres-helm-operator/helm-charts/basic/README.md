@@ -1,4 +1,4 @@
-Crunchy Data Primary Helm Example
+Postgres Primary Helm Example
 =======
 
 [PostgreSQL](https://postgresql.org) is a powerful, open source object-relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness.
@@ -14,8 +14,7 @@ $ helm install primary --name primary
 Introduction
 ------------
 
-This is an example of running the Crunchy PostgreSQL containers using the Helm project! More examples of the Crunchy Containers for PostgreSQL can be found at the [GitHub repository](https://github.com/CrunchyData/crunchy-containers).
-
+This is an example of running the PostgreSQL containers using the Helm project! 
 This example will create the following in your Kubernetes cluster:
 
  * Create a pod named *primary*
@@ -94,11 +93,3 @@ $ helm install primary --name primary  \
   -f values.yaml
 ```
 
-Legal Notices
--------------
-
-Copyright 2017 - 2020 Crunchy Data Solutions, Inc.
-
-CRUNCHY DATA SOLUTIONS, INC. PROVIDES THIS GUIDE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF NON INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
-
-Crunchy, Crunchy Data Solutions, Inc. and the Crunchy Hippo Logo are trademarks of Crunchy Data Solutions, Inc.

@@ -13,6 +13,19 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - pods
+  - services
+  - services/finalizers
+  - endpoints
+  - persistentvolumeclaims
+  - events
+  - configmaps
+  - secrets
+  verbs:
+  - '*'
+- apiGroups:
+  - ""
+  resources:
   - configmaps
   - secrets
   verbs:

@@ -1,17 +1,14 @@
 container:
   name: primary
   port: 5432
-credentials:
-  primary: password
-  root: password
-  user: password
+data:
+  pgdata: "/var/lib/postgresql/data/db-files/"
+  pguser: postgresadmin
+  pgpassword: admin123
+  pgdb: postgresdb
 image: registry.access.redhat.com/rhscl/postgresql-10-rhel7
 name: primary
 pv:
   storage: 2Gi
 pvc:
   name: primary-pvc
-resources:
-  cpu: 200m
-  memory: 512Mi
-serviceType: ClusterIP
