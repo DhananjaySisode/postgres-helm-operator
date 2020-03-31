@@ -27,9 +27,13 @@ spec:
         ports:
         - containerPort: {{.Values.container.port}}
           protocol: TCP
-        envFrom:
-          - configMapRef:
-              name: postgresql-cm
+        env:
+          - name: POSTGRESQL_USER
+            value: primary
+          - name: POSTGRESQL_PASSWORD
+            value: admin123
+          - name: POSTGRESQL_DATABASE
+            value: pgdb            
         volumeMounts:
         - name: postgresql-data
           mountPath: "/var/lib/postgresql/data"

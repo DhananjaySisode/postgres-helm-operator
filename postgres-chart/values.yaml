@@ -70,11 +70,7 @@ affinity: {}
 container:
   name: primary
   port: 5432
-data:
-  pgdata: "/var/lib/postgresql/data/db-files/"
-  pguser: postgresadmin
-  pgpassword: admin123
-  pgdb: postgresdb
+ 
 image: registry.access.redhat.com/rhscl/postgresql-10-rhel7
 name: primary
 pv:
