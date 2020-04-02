@@ -59,7 +59,7 @@ metadata:
     capabilities: Basic Install
     categories: "Database"
     description: Deploy a Postgresql DB
-    containerImage: quay.io/deekshah86/postgres-helm-operator:v0.0.1
+    containerImage: quay.io/deekshah86/pg-helm-operator:v0.0.1
     createdAt: 2020-03-05T12:59:59Z
     support: OpenLabs
     certified: "false"
@@ -109,7 +109,7 @@ spec:
                   value: postgres-helm-operator
                 - name: RELATED_IMAGE_POSTGRESQL
                   value: registry.access.redhat.com/rhscl/postgresql-10-rhel7
-                image: quay.io/deekshah86/postgres-helm-operator:v0.0.1
+                image: quay.io/deekshah86/pg-helm-operator:v0.0.1
                 imagePullPolicy: Always
                 name: postgres-helm-operator
                 resources: {}

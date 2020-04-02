@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha2
+kind: OperatorGroup
+metadata:
+  name: postgres-helm-operator
+  namespace: helm-pg
+spec:
+  targetNamespaces:
+  - helm-pg
+
