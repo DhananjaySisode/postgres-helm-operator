@@ -5,6 +5,6 @@ metadata:
 spec:
   displayName: OpenLabs
   endpoint: https://quay.io/cnr
-  registryNamespace: opentestlabs
+  registryNamespace: rhm_samples
   type: appregistry
 
